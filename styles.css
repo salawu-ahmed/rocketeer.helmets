@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* variables */
+:root {
+    --general-text: rgba(242, 242, 242, .8);
+    --white-text: #FFF;
+
+    --submit-background: #024959;
+
+}
+
+
+/* general styles  */
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    padding: 0 3.6rem;
+}
+
+
+/* navbar styles */
+nav, .nav__links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+nav{
+    width: 100%;
+    height: 40px;
+    color: var(--general-text);
+    background-color: #19050A;
+}
+.nav__links{
+    width: 30vw;
+    height: 100%;
+}
+.nav__links a {
+    color: var(--general-text);
+}
+nav h1 {
+    font-family: 'Vollkorn';
+}
+
+
+/* home styles */
+.home__page{
+    width: 100vw;
+    height: calc(100vh - 40px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(images/home__background.png);
+    background-size: cover;
+}
+.home__flexbox{
+    width: 42%;
+    height: 70%;
+    color: var(--general-text);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
+}
+.home__text .big__text {
+    width: 100%;
+    font-size: 6rem;
+    color: var(--white-text);
+    line-height: 7rem;
+}
+.home__text .small__text{
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-variant: light;
+}
+.form__controls{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+form input[type='submit'] {
+    width: 150px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: var(--submit-background);
+    color: var(--white-text);
+}
+form input[type='email'] {
+    width: 300px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: #590209;
+    border-radius: 10px;
+    padding: 0 1rem;
+}
+
+
+/* about-us */
+.about-us__page{
+    
+}
