@@ -44,10 +44,7 @@ a {
     color: var(--general-text);
 }
 body{
-    /* background: repeating-radial-gradient(rgba(4, 8, 13, .9), #08060B,rgba(242, 100, 48, .9)); */
-    /* background: repeating-radial-gradient(#5A0007, #040308 , #5A0007); */
-    background: linear-gradient(#5A0007, #040308) ;
-    background: linear-gradient("ltr", #5A0007, #040308);
+    
 }
 
 
@@ -140,6 +137,9 @@ form input[type='email'] {
 /* about-us */
 .about-us__page{
     font-family: 'Raleway', sans-serif;
+    /* background: radial-gradient(farthest-side at 99% 99%,#5A0007 ,#040308, #5A0007); */
+    /* background: repeating-radial-gradient(circle at 99% 99%,#F26430 ,#040308,#040308 ,#040308,#040308,#040308, #5A0007); */
+    background: repeating-radial-gradient(circle at 99% 99%,#F26430 ,#040308,#040308 ,#040308,#040308,#040308, #5A0007);
 }
 .about-us{
     padding: 3rem 5rem;
@@ -160,6 +160,7 @@ form input[type='email'] {
 .about-us h2 {
     font-size: 24px;
 }
+
 
 .product{
     display: flex;
@@ -217,5 +218,20 @@ form input[type='email'] {
     line-height: 1.3rem;
     padding: 1.2rem;
     border-radius: 15px;
-    box-shadow: 0 4px 4px 0 rgb(0, 0, 0, .25)  ;
+    box-shadow: -1px 4px 4px 4px #5A0007 ;
 }
+
+
+.about-us__page,
+.product__page2{
+    background: 
+        radial-gradient(farthest-corner at right bottom,rgba(242, 100, 48, .8) ,#040308 30% , transparent),
+        radial-gradient(farthest-corner at top left , #5A0007,#040308 70%, transparent);
+}
+.product__page1,
+.pricing__page{
+    background: 
+        radial-gradient(farthest-corner at top right,rgba(242, 100, 48, .8) ,#040308 30% , transparent),
+        radial-gradient(farthest-corner at left bottom , #5A0007,#040308 70%, transparent);
+}
+
